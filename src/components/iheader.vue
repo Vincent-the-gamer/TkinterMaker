@@ -74,7 +74,7 @@ export default {
         })
         .catch((err) => {
           this.$alert(
-            "下载预览服务脚本<a href='/preview.py'>[preview.py]</a>，启动后在尝试。",
+            "下载预览服务脚本<a href='https://github.com/Vincent-the-gamer/TkinterMakerApp/blob/gh-pages/preview.py'>[preview.py]</a>，启动后在尝试。",
             "服务未启动",
             {
               dangerouslyUseHTMLString: true,
