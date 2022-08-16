@@ -7,14 +7,14 @@
       <el-button type="danger"
         @click="()=>{this.$emit('clearData')}">清理数据</el-button>
       <el-button type="primary"
-        @click="()=>{this.$emit('viewCode')}">Python</el-button>
+        @click="()=>{this.$emit('viewCode')}">查看页面对应的Python代码</el-button>
       <el-button type="primary"
-        @click="preview()">预览</el-button>
+        @click="preview()">预览页面</el-button>
       <el-dropdown split-button
         type="primary"
         class="export_btn"
         @click="()=>{this.$emit('onClickExport')}">
-        导出
+        导出.tk文件
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item>
             <el-upload action=""

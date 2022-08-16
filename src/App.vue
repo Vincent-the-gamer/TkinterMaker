@@ -7,16 +7,15 @@
           @onClickExport="onClickExport"
           :beforeUpload="beforeUpload"></IHeader>
       </el-header>
-      <el-container style="height:calc(100vh - 60px - 60px - 1px);">
+      <el-container class="container">
         <WidgetBox></WidgetBox>
         <el-main>
           <Elements></Elements>
         </el-main>
         <AttrsBox v-model="attrsForm"></AttrsBox>
       </el-container>
-      <el-footer class="footer">
-        <IFooter></IFooter>
-      </el-footer>
+      <IFooter/>
+
     </el-container>
 
     <CodeView ref="code_view"></CodeView>
@@ -131,6 +130,8 @@ export default {
 .header {
   border-bottom: 1px solid #d1d1d1;
   box-shadow: 0 1px rgb(12 13 14 / 10%), 0 1px 6px rgb(60 65 70 / 10%);
+  background-color: black;
+  color: deeppink;
 }
 </style>
 
@@ -139,9 +140,18 @@ body {
   user-select: none;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: black;
 }
 * {
   outline: none;
+}
+.container{
+  height:calc(100vh - 60px - 60px - 1px);
+  background-color: black;
+  color: deeppink;
+  overflow: hidden;
+}
+.container::-webkit-scrollbar{
+  display: none;
 }
 </style>

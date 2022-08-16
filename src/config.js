@@ -1,9 +1,10 @@
+const conf = require('../package.json')
 export const preview = {
-    url: 'http://127.0.0.1:12300',
-    version: '1.0.0',
+    url: 'http://127.0.0.1:6050',
+    version: conf.version,
 }
 
 export default {
-    name: 'Tkinter布局助手',
-    version: '2.2.1',
+    name: 'Tkinter页面制作小工具',
+    version: conf.version,
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-dialog title="Python"
+    <el-dialog title="Python代码"
       top="30px"
       :visible.sync="is_show"
       width="80%">
@@ -42,14 +42,17 @@ export default {
 <style lang="scss" scoped>
 .code {
   height: auto !important;
+  background-color: black;
 }
 </style>
 
 <style lang="scss">
 .el-dialog__body {
   padding: 0;
+  background-color: black;
 }
 .CodeMirror {
   height: 500px !important;
+  background-color: black;
 }
 </style>

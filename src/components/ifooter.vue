@@ -1,13 +1,13 @@
 <template>
-  <div class="info">
-    <span>{{$config.name}} | </span>
-    <span>V{{$config.version}} | </span>
-    <a href="https://github.com/iamxcd/tkinter-helper"
-      target="_blank">github | </a>
-    <a href="https://zhuanlan.zhihu.com/p/532678277"
-      target="_blank">使用说明 | </a>
-    <a href="http://beian.miit.gov.cn/"
-      target="_blank">蜀ICP备18032036号</a>
+  <div class="footer">
+    <div class="info">
+      <span>{{$config.name}} | </span>
+      <span>V{{$config.version}}</span>
+    </div>
+    <div class="guifeng">
+      <a href="https://space.bilibili.com/3342738" target="_blank">诡锋的B站  |  </a>
+      <a href="https://github.com/Vincent-the-gamer" target="_blank">诡锋的Github</a>
+    </div>
   </div>
 
 </template>
@@ -18,16 +18,38 @@ export default {};
 
 <style lang="scss" scoped>
 .footer {
-  border-top: 1px solid rgba(12, 13, 14, 0.1);
+  position: relative;
+  background-color: black;
+  color: deeppink;
 
   .info {
-    font-size: 10px;
+    font-size: 16px;
     text-align: center;
-    line-height: 60px;
-    color: #707070;
+    color: deeppink;
+    background-color: black;
     a {
       text-decoration: none;
-      color: #707070;
+      color: deeppink;
+      &:hover{
+        color: cyan;
+      }
+    }
+    &:hover{
+      color: cyan;
+    }
+  }
+}
+.guifeng{
+  position: relative;
+  margin-top: 4px;
+  text-align: center;
+  background-color: black;
+  color: deeppink;
+  a{
+    text-decoration: none;
+    color: deeppink;
+    &:hover{
+      color: cyan;
     }
   }
 }
